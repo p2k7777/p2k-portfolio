@@ -1,1 +1,81 @@
-p2k-portfolio/ │ ├─ index.html → मुख्य webpage ├─ README.md → Repo description ├─ css/ │ └─ style.css → Tailwind custom CSS ├─ images/ │ ├─ profile.jpg │ ├─ project1.png │ └─ project2.png └─ js/ └─ script.js → Optional JS files ..... kaha kasari upload ghrnea
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paras Khadka Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Hero Section -->
+<section class="hero-bg h-screen flex flex-col justify-center items-center text-center">
+  <img src="images/profile.jpg" alt="Profile" class="img-rounded mb-4 w-36 h-36 object-cover">
+  <h1 class="text-4xl font-bold">Paras Khadka</h1>
+  <p class="mt-2 text-lg">Designer | Video Editor | Content Writer | Ads Video Creator</p>
+  <a href="#contact" class="btn-primary mt-6">Hire Me</a>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20">
+  <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+  <p class="about-text">
+    I am Paras Khadka, a creative professional with skills in design, video editing, content writing, and ad video creation.
+    I love building modern, responsive, and engaging digital content.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-white">
+  <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
+    <div class="card">Design</div>
+    <div class="card">Video Editing</div>
+    <div class="card">Content Writing</div>
+    <div class="card">Ads Video Creation</div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20">
+  <h2 class="text-3xl font-bold text-center mb-10">My Work</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="portfolio-card">
+      <img src="images/project1.png" alt="Project 1" class="w-full">
+      <div class="p-4">
+        <h3 class="font-bold text-lg">Project One</h3>
+        <p class="text-gray-600">Short description of the project.</p>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <img src="images/project2.png" alt="Project 2" class="w-full">
+      <div class="p-4">
+        <h3 class="font-bold text-lg">Project Two</h3>
+        <p class="text-gray-600">Short description of the project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-white">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p class="mb-6">Feel free to reach out for collaborations or inquiries.</p>
+    <form class="grid gap-4">
+      <input type="text" placeholder="Your Name" class="p-3 rounded bg-gray-800 border border-gray-700">
+      <input type="email" placeholder="Your Email" class="p-3 rounded bg-gray-800 border border-gray-700">
+      <textarea placeholder="Your Message" rows="5" class="p-3 rounded bg-gray-800 border border-gray-700"></textarea>
+      <button class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 text-center bg-gray-800 text-gray-400">
+  © 2025 Paras Khadka. All rights reserved.
+</footer>
+
+</body>
+</html>
